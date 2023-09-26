@@ -1,0 +1,181 @@
+/*Definição de cores no projeto*/
+:root {
+  --primary: #EB1CCC;
+  --secondary: #95989A;
+  --text-color: #fff;
+  --text-secondary: #fffdfd00;
+  --text-tertiary: #5d5d5d;
+  
+}
+
+* {
+  font-family: 'Mooli', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  
+}
+
+/*inicio do projeto e formulario*/
+
+#event-description {
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0.8));
+  background-image: url('../img/Mulher.jpg');
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--text-color);
+}
+
+#disclaimer h2,
+#disclaimer.event-date {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+#disclaimer h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+#disclaimer.about-event {
+  font-size: 2em;
+  text-transform: uppercase;
+  max-width: 350px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#disclaimer p {
+  font: size 1.2em;
+  margin-bottom: 3.em;
+}
+
+#subscription-form {
+  background-color: var(--secondary);
+  padding: 2em;
+  max-width: 30%;
+
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.3em;
+}
+
+.form-group-label {
+  color: var(--text-tertiary);
+  margin-bottom: .3em;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: var(--secondary);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+#titulo-destaque h3 {
+  margin: 0;
+  padding: 10px 5px;
+  background-color: var(--secondary);
+  text-align: center;
+  font-weight: 1000;
+
+}
+
+/* Definição da section details*/
+#details {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  width: 50%;
+  gap: 5%;
+  margin-bottom: 1rem;
+}
+
+.detail img {
+  width: 100%;
+}
+
+/* Defininição footer*/
+.footer {
+  text-align: center;
+  color: var(--text-secondary);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+/* Responsividade Mobile*/
+@media(max-width: 450px) {
+
+  #event-description {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #disclaimer {
+    padding: 0.5rem;
+  }
+
+  #disclaimer h1 {
+    font-size: 2.2rem;
+  }
+
+  #disclaimer h2 {
+    margin: bottom 0.2em;
+    font-size: 2em;
+  }
+
+  #subscription-form {
+    max-width: 70%;
+    margin-bottom: 2em;
+  }
+
+  #address {
+    order: 2;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  #address i {
+    margin: 3.em 0;
+
+  }
+
+  .detail {
+    flex-direction: column;
+    margin-bottom: .5em;
+    gap: 0;
+  }
+
+  .detail-img {
+    width: 100%;
+    margin: 2em;
+
+  }
+
+  .detail-discription {
+    padding: 0;
+
+  }
+
+}
